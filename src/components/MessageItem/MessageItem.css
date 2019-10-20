@@ -1,0 +1,90 @@
+.message-item {
+  border-radius: 6px;
+  box-shadow: 0 8px 24px -14px rgba(75, 78, 128, 0.2);
+  background-color: #ffffff;
+  border: 0px;
+}
+
+.message-item:hover {
+  background-color: #f8f9ff;
+}
+
+.message-item:hover .message-item__title {
+  color: #715dff;
+}
+
+.message-item:hover .message-item__body {
+  color: #141740;
+}
+
+.message-item__user-avatar {
+  width: 40px;
+  height: 40px;
+  margin: 16px 12px 16px 16px;
+  border-radius: 20px;
+  background-image: url("../../resources/images/user-avatar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.message-item__user-status-online {
+  position: relative;
+  top: 29px;
+  left: 29px;
+  width: 8px;
+  height: 8px;
+  border: solid 2px #ffffff;
+  background-color: #5fcc2b;
+  border-radius: 6px;
+}
+
+.message-item__text-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.message-item__title-time-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message-item__title {
+  font-family: "Muli";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  color: #141740;
+  margin: 16px 4px 4px 0px;
+}
+
+.message-item__time {
+  font-family: "Muli";
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #adaec4;
+  margin: 16px 16px 6px 4px;
+  min-width: 50px;
+}
+
+.message-item__body {
+  font-family: "Muli";
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #9394a7;
+  margin: 0px 16px 16px 0px;
+}

@@ -1,0 +1,11 @@
+.message-list {
+  background-color: #f1f2fb;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.message-list__item {
+  display: flex;
+  flex-direction: row;
+  margin: 4px 16px 4px 16px;
+}

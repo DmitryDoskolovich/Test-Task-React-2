@@ -1,0 +1,10 @@
+.search-form__input {
+  flex: 1;
+  margin: 12px 8px 16px 16px;
+}
+
+.search-form__button {
+  width: 40px;
+  height: 40px;
+  margin: 12px 16px 16px 0px;
+}
