@@ -1,6 +1,8 @@
 .header {
   background-image: url("../../resources/images/pic-circles.svg"),
-    linear-gradient(203deg, #710fbe, #252fb3);
+    linear-gradient(203deg, #710fbe, #252fb3),
+    linear-gradient(234deg, #ffffff 76%, rgba(255, 255, 255, 0) 38%);
+  background-position: -10px -35px, 0% 0%, 123px 14px;
   background-size: cover;
 }
 

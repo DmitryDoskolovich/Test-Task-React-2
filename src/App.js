@@ -20,8 +20,13 @@ class App extends React.Component {
     } else {
       let newFilteredData = this.state.data.filter(
         element =>
-          element["body"].includes(this.state.searchValue) &&
-          element["title"].includes(this.state.searchValue)
+          element["body"]
+            .replace(/\n/g, " ")
+            .toLowerCase()
+            .includes(this.state.searchValue.toLowerCase()) &&
+          element["title"]
+            .toLowerCase()
+            .includes(this.state.searchValue.toLowerCase())
       );
       this.setState({ filteredData: newFilteredData });
     }
@@ -50,7 +55,7 @@ class App extends React.Component {
               return {
                 id: item[1]["id"],
                 title: item[1]["title"],
-                body: item[1]["body"].replace(/\n/gi, " ")
+                body: item[1]["body"]
               };
             });
             this.setState({ data: resObj, filteredData: resObj });
