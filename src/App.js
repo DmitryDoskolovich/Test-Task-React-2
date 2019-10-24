@@ -41,7 +41,7 @@ class App extends React.Component {
           console.log("error:", res.status);
         } else {
           res.json().then(response => {
-            let resObj = Array.from(response).map(item => {
+            let resObj = response.map(item => {
               return {
                 id: item["id"],
                 title: item["title"],
